@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<script>
+
+function mars (energy, protein, carbohydrate, sugars, fat, saturates, fibre, sodium) {
+	this.energy;
+	this.protein;
+	this.carbohydrate;
+	this.sugars;
+	this.fat;
+	this.saturates;
+	this.fibre;
+	this.sodium;
+}
+
+var mars = new mars (
+'1888, 4.3, 68.9, 59.7, 17.1, 8.3, 1.2, 0.16');
+
+window.localStorage.setItem("mars", JSON.stringify("mars"));
+
+var retrieved_mars =
+JSON.parse(window.localStorage.getItem("mars"));
+
+<script/>
+
+<body>
+</body>
+</html>
